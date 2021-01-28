@@ -23,7 +23,7 @@ public class Helper
 	 */
 	public static boolean breakBlock_if_notAir(Location location)
 	{
-		if(location.getBlock().getType()!=Material.AIR)
+		if(location.getBlock().getType()!=Material.AIR  && location.getBlock().getType()!=Material.STATIONARY_WATER && location.getBlock().getType()!=Material.WATER)
 		{
 			breakBlock(location);
 			return true;

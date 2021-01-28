@@ -85,7 +85,7 @@ public class DoMob extends BukkitRunnable
     		tmp1.setY(tmp1.getY()-1);
     		if(Helper.breakBlock_if_notAir(tmp1)){return;}
     		//如果脚下是空气，搭路
-			tmp1.setY(tmp1.getY()-2);
+			tmp1.setY(tmp1.getY()-1);
 			Helper.makeBlock(tmp1);
 			return;
     	}
@@ -101,7 +101,7 @@ public class DoMob extends BukkitRunnable
     		tmp1.setY(tmp1.getY()-1);
     		if(Helper.breakBlock_if_notAir(tmp1)){return;}
     		
-			tmp1.setY(tmp1.getY()-2);
+			tmp1.setY(tmp1.getY()-1);
     		Helper.makeBlock(tmp1);
 			return;
     	}
